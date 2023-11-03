@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  max-width: 1500px;
+  height: 100vh;
+}
+nav {
+  background-color: black;
+  color: white;
+  padding: 3rem 1rem;
+}
+.logo {
+  margin-bottom: 1rem;
+}
+ul {
+  padding: 1rem;
+}
+.menus a {
+  color: white;
+}
+
+main {
+  padding: 2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.textBox {
+  margin-bottom: 1rem;
+}
+textarea {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+.buttonBoxes {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.buttonBoxes button {
+  margin: 0.5rem;
+}
+
+@media screen and (width>1400px) {
+  .grid-container {
+    margin: 0 auto;
+  }
+}
+@media screen and (width<900px) {
+  main {
+    padding: 2rem 0.8rem;
+  }
+}
+@media screen and (width<500px) {
+  .grid-container {
+    flex-direction: column;
+    justify-content: start;
+  }
+  main {
+    padding: 0;
+  }
+  main > div {
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+  textarea {
+    padding: 0;
+    height: 100%;
+  }
+}

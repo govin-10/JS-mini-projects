@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <nav>
+        <div class="logo">
+          <h2>TextUtils</h2>
+        </div>
+        <ul class="menus">
+          <a href="#functional">
+            <li>Functional</li>
+          </a>
+          <a href="">
+            <li></li>
+          </a>
+          <a href="">
+            <li></li>
+          </a>
+        </ul>
+      </nav>
+
+      <main>
+        <div>
+          <div class="textBox" id="functional">
+            <textarea
+              name=""
+              id="textArea"
+              placeholder="Enter your text here..."
+            ></textarea>
+          </div>
+          <div class="functions">
+            <h3>Convert to:</h3>
+            <div class="buttonBoxes">
+              <button
+                id="uppercaseButton"
+                style="background-color: rgb(50, 134, 230); color: white"
+              >
+                UPPERCASE
+              </button>
+              <button
+                id="lowercaseButton"
+                style="background-color: rgb(0, 183, 255); color: white"
+              >
+                lowercase
+              </button>
+              <button
+                id="clearButton"
+                style="background-color: red; color: white"
+              >
+                Clear
+              </button>
+              <button
+                id="whiteRemoveButton"
+                style="background-color: rgb(136, 132, 132); color: black"
+              >
+                Remove white space
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
